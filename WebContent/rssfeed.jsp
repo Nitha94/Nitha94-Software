@@ -60,7 +60,7 @@ background-size: 20px 20px;
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.jsp">Home</a></li>
        <!--  <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Trending Today<span class="caret"></span></a>
            <ul class="dropdown-menu">

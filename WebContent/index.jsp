@@ -232,31 +232,20 @@ background:#000000;
 }
 
 .btnone {
-  -webkit-border-radius: 18;
-  -moz-border-radius: 18;
-  border-radius: 18px;
+  -webkit-border-radius: 15;
+  -moz-border-radius: 15;
+  border-radius: 20px;
   font-family: Arial;
-  color: #b5aab5;
-  font-size: 12px;
-  background: #1f2326;
-  padding: 4px 8px 4px 8px;
+  color: #ebe6eb;
+  font-size: 20px;
+  background: #121314;
+  padding: 5px 8px 5px 8px;
   text-decoration: none;
 }
-
 .btnone:hover {
-  background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
-  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+background: #e8a909;
   text-decoration: none;
-}
-
-
-
-
-
+ }
 </style>
 </head>
 <body>
