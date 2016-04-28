@@ -1,0 +1,1 @@
+You have selected to find Highest value of YHOO ticker for time period10 DAYand value :37.84 on date 2016-04-20
