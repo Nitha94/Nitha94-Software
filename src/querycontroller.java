@@ -93,24 +93,24 @@ public class querycontroller extends HttpServlet {
 			}
 			System.out.println("Latest values appended "+latestval.toString());
 			if(ticker_val.equals("all")) hello="The Latest values are " + latestval;
-			else hello="You have selected to find Latest value of "+ ticker_val+ " ticker and value :"+stockvalues;
+			else hello="Latest value of "+ ticker_val+ " ticker and Price :"+stockvalues;
 		}
 		if(priceoption.equals("Highest")){
-			hello="You have selected to find Highest value of "+ ticker_val+ " ticker for time period"+ daterange
-					+ "and value :"+stockvalues+" on date " + datevalues;
+			hello="Highest value of "+ ticker_val+ " ticker for period"+ daterange
+					+ "has value:"+stockvalues+" on date " + datevalues;
 		}
 		if(priceoption.equals("Lowest")){
-			hello="You have selected to find Lowest value of "+ ticker_val+ " ticker for time period"+ daterange
-					+ "and value :"+stockvalues+" on date " + datevalues;
+			hello="Lowest value of "+ ticker_val+ " ticker for period"+ daterange
+					+ "has value :"+stockvalues+" on date " + datevalues;
 		}
 		if(priceoption.equals("Average")){
-			hello="You have selected to find Average value of "+ ticker_val+ " ticker for time period"+ daterange
-					+ "and value :"+stockvalues;
+			hello="Average value of "+ ticker_val+ " ticker for period"+ daterange
+					+ "has value :"+stockvalues;
 		}
 		if(priceoption.equals("lessAverage")){
-			hello="You have selected to find tickers whose Average value is less than "+ ticker_val+ " "
-					+ " for time period "+ daterange
-					+ "and values are :"+ tickernames;
+			hello="Tickers whose Average value is less than "+ ticker_val+ " "
+					+ " for period "+ daterange
+					+ "has values :"+ tickernames;
 		}
 		
 		// dispatch it to bayesiansubmit.jsp
@@ -121,7 +121,7 @@ public class querycontroller extends HttpServlet {
 		request.setAttribute("resp",hello );		
 		dispatch.forward(request, response);
 		BufferedWriter outputWriter = null;
-	    outputWriter = new BufferedWriter(new FileWriter("C:/Users/Thara Philips/workspace/Software/WebContent/ajaxout.txt"));	
+	    outputWriter = new BufferedWriter(new FileWriter("/Users/nivethamahalakshmibalasamy/Documents/workspace/Software/ajaxout.txt"));	
 	    outputWriter.write(hello);	    
 	    System.out.println("wrote");
 	    outputWriter.flush();

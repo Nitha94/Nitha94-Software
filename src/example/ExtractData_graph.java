@@ -101,7 +101,7 @@ package example;
 				Class.forName("com.mysql.jdbc.Driver").newInstance(); 
 				//conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/database_name", "root", "");
 				
-				conn = DriverManager.getConnection("jdbc:mysql://localhost/stockhistory", "root", "root");
+				conn = DriverManager.getConnection("jdbc:mysql://localhost/Collect_Data", "root", "root");
 				stmt = (Statement) conn.createStatement();
 				System.out.println("in after connection");			
 				String query = "SELECT Time, Price FROM realtime WHERE Ticker_symbol='"+ticker+"' ORDER BY Time DESC LIMIT " + time;	

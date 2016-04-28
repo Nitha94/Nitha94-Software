@@ -138,14 +138,14 @@ public class bayesiancontroller extends HttpServlet {
 		
 		dispatch = request.getRequestDispatcher("bayesiansubmit.jsp");
 		if(diff==1){ //bayesian
-			shortprediction="For selected date "+period+" predicted value is" +predicted_val;
+			shortprediction="For date "+period+" predicted price is " +predicted_val;
 			request.setAttribute("shorttermprediction", shortprediction);
 //			request.setAttribute("predictedval", predictedval);
 			//request.setAttribute("selection", selection);
 //			request.setAttribute("date", period);
 		}else if(diff>1 && diff<5){ //ANN
 			System.out.println("In ann");
-			shortprediction="For selected date "+period+" predicted value is" +predictedval_ann;
+			shortprediction="For "+period+" predicted price is " +predictedval_ann;
 			request.setAttribute("shorttermprediction", shortprediction);
 //			request.setAttribute("predictedval", predictedval_ann);
 			//request.setAttribute("selection", selection);
@@ -154,8 +154,8 @@ public class bayesiancontroller extends HttpServlet {
 		else if(diff>=5){ //SVM
 			System.out.println("In SVM");
 			if(vote==1)
-			shortprediction="For selected date "+period+" prediction is +1 so **BUY or HOLD**";
-			else shortprediction="For selected date "+period+" prediction is -1 so **SELL **";
+			shortprediction="For "+period+" prediction is +1 so **BUY or HOLD**";
+			else shortprediction="For "+period+" prediction is -1 so **SELL **";
 			request.setAttribute("shorttermprediction", shortprediction);
 		}
 		

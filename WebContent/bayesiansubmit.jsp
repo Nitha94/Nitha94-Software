@@ -211,9 +211,9 @@ background-size: 20px 20px;
 
 .contentquery{
    position:absolute;
-    height:90%; /* = 100% - 2*10% padding */
-    width:90%; /* = 100% - 2*5% padding */
-    padding: 5% 5%;
+    height:98%; /* = 100% - 2*10% padding */
+    width:98%; /* = 100% - 2*5% padding */
+    padding: 2% 2%;
     text-align:center
   }
   
@@ -237,6 +237,14 @@ background-size: 20px 20px;
   background: #a6aaad;
   text-decoration: none;
 } 
+.font_style{
+color: #0a0a0a; font-family: 'Droid serif', serif; font-size: 19px; font-weight: 400; font-style: italic; line-height: 44px; margin: 0 0 12px; text-align: center;
+}
+
+.font_stylequery{
+color: #0a0a0a; font-family: 'Droid serif', serif; font-size: 15px; font-weight: 400; font-style: italic; line-height:24px; text-align: center;
+}
+
 </style>
 </head>
 <body>
@@ -301,7 +309,7 @@ action="bayesiancontroller" >
 Prediction Duration <br> <input type="date" id="dateperiod" name="dateperiod" value="2016-04-27" >
 <br><br>
 <input class="btn" id="button" type="submit" value="Predict"/><br>
-<output>Result: <%= request.getAttribute("shorttermprediction") %></output> 
+<output><p class="font_style"><%= request.getAttribute("shorttermprediction") %></p></output> 
 </form>
 </div>
 </div>
@@ -397,7 +405,7 @@ Date <select id ="daterange" name="daterange">
 </select>
 <br><br>
 <input  id="button"  type="submit" value="Get" class="btn" /><br>
-<output> Result: <%= request.getAttribute("resp") %></output> 
+<output><p class="font_stylequery"><%= request.getAttribute("resp") %></p></output> 
 </form>
 </div>
 </div>
@@ -467,6 +475,15 @@ function myFunction1() {
 </form>
 </div>
     </div>
-</body>
+ <web-app>
+<listener>
+    <listener-class>
+     com.listeners.MyContextListener
+    </listener-class>
+  </listener>
+<servlet/>
+<servlet-mapping/>
+</web-app>    
+    </body>
 
 </html>
