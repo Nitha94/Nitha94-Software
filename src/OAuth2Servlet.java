@@ -25,6 +25,7 @@ import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.jackson.JacksonFactory;
 import com.google.api.services.plus.Plus;
 import com.google.api.services.plus.model.Person;
+import com.sun.webkit.network.CookieManager;
 
 /**
  * Servlet implementation class OAuth2Servlet
@@ -77,10 +78,10 @@ public class OAuth2Servlet extends HttpServlet {
 		                        ClientParametersAuthentication(
 		                                Constants.OAUTH_CLIENT_ID, 
 		                                Constants.OAUTH_CLIENT_SECRET)).execute();
-		            
+		            //.setAccessType("offline").setApprovalPrompt("force").build()
 		            String accessToken = tokenResponse.getAccessToken();
 		            //Person person = new Person();
-		            //Plus plus = new Plus();
+		            
 		            Person person =  new Plus.Builder(httpTransport, jsonFactory, null)
 		                    .setApplicationName("Software").build().people().get("me")
 		                    .setOauthToken(accessToken).execute();
@@ -126,7 +127,8 @@ public class OAuth2Servlet extends HttpServlet {
 			    else {
 			        response.getWriter().println(name + " [" + email + "]");
 			        request.getRequestDispatcher("bayesiansubmit.jsp").forward(request,response);
-//			        response.setContentType("text/html");
+			        
+//			       response.setContentType("text/html");
 //					PrintWriter out = response.getWriter();
 //					
 //					out.print("<html><body>");

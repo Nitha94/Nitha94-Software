@@ -29,7 +29,7 @@ import SVMlib.Constants;
 
 /**
  * Class which predicts using SVM, RSI and MACD
- * @author Saumya
+ * 
  *
  */
 public class SVMPredict {

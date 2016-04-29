@@ -232,14 +232,14 @@ background:#000000;
 }
 
 .btnone {
-  -webkit-border-radius: 15;
-  -moz-border-radius: 15;
-  border-radius: 20px;
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 10px;
   font-family: Arial;
   color: #ebe6eb;
-  font-size: 20px;
+  font-size: 13px;
   background: #121314;
-  padding: 5px 8px 5px 8px;
+  padding: 3px 5px 3px 5px;
   text-decoration: none;
 }
 .btnone:hover {
@@ -271,7 +271,7 @@ background: #e8a909;
           </ul>
         </li> -->
         <li><a href="rssfeed.jsp">Trending Today</a></li>
-        <li><a href="rssfeed.jsp">Contact Us</a></li>
+        <li><a href="contact.jsp">Contact Us</a></li>
        <!--  <li><a href="#">History</a></li> -->
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -302,8 +302,9 @@ background: #e8a909;
 <div class="container-fluid bg-2 text-left">
   <h2>HOW DO WE PREDICT THE FUTURE OF THE STOCK MARKET?</h2>
 <p>
-  The results may seem like magic, but there is sophisticated math behind them. First, we harness the collective intelligence of online investors. Unlike other companies, we don't stop there. The data we collect is just the raw material for our complex analyses. Our founder, Dr. Craig Kaplan, the former CEO of IQ company and professor of computer science, created algorithms that are able to mine our huge collection of data to determine which of our collective predictions are most likely to be accurate and should be given the most weight.</p>
-<p>These two layers — collecting massive quantities of useful data and ranking and analyzing them in subtle ways — combine to produce a model with the power to make market-beating predictions. We then add a third layer of information by identifying which individuals in our user base have been the most accurate in their stock predictions. With PredictWallStreet, you don't have to choose between the collective wisdom of the crowds or the expertise of the exceptional investors. We present you with actionable information from both, filtered through our algorithms that collect the data that has the strongest predictive power.</p>
+  The results may seem like magic, but there is sophisticated math behind them.</p>
+  <p>How do we predict the stock market, something which is so dynamic in nature? How do we find out when the prices rise or fall? Are we experts with stock prediction through mere guessing? Fret not. We do know the magic of Math, Data Processing and Algorithms</p>
+<p> So how do we do it? We collect lot of raw data for our algorithms which serves as the first layer of our website. Second layer is combining the data in a meaningful way and plug it into our algorithms and VOILA! We get the Predicted values</p>
 </div>
 <div class="container-fluid bg-3 text-center">
   <h3>Join Us!</h3>

@@ -270,7 +270,7 @@ color: #0a0a0a; font-family: 'Droid serif', serif; font-size: 15px; font-weight:
           </ul>
         </li> -->
         <li><a href="rssfeed.jsp">Trending Today</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="contact.jsp">Contact Us</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
 <!--         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
